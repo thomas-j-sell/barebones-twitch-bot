@@ -1,17 +1,15 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y013678)
 
-# Barebones Twitch Bot in Python
+# teaja_bot
 
->**This is the companion repo to a [tutorial](https://dev.to/twitchbot101) on dev.to**
+>**This is a fork of https://github.com/NinjaBunny9000/barebones-twitch-bot with a few snippits taken from https://github.com/NinjaBunny9000/DeepThonk**
+><br>
+>**Big thanks to NinjaBunny9000 for building the base.**
 
-This is a starter-kit for Twitch chat bot, if you wanna write one in Python. It utilizes the TwitchIO library and YAML files for storing secrets and config info.
-
-It's pretty basic right now, but I'll be expanding on this in the near future. The larger, more complex Twitch bot is being developed [HERE](https://github.com/NinjaBunny9000/DeepThonk) during [Live-Streams on Twitch](https://twitch.tv/ninjabunny9000).
-
+This is a basic twitch chatbot written in python. Noteable features include a joke command and a series of queue commands for playing with viewers.
 
 ## Getting Started
 
-Should be quick & easy to get up and running but, ofc, if you ever have questions about the specifics, please feel free to ask me during streams or post an issue above.
+Should be quick & easy to get up and running but, ofc, if you ever have questions about the specifics, please feel free to ask me.
 
 ### Prerequisites
 - [Python 3.6](https://www.python.org/downloads/release/python-368/)
@@ -22,15 +20,17 @@ Should be quick & easy to get up and running but, ofc, if you ever have question
 1. Clone the repo, unzip it somewhere
 2. Open up a console window and navigate to the directory you unzipped it in
 3. Install requirements with `pipenv install`
-4. Copy & rename `integrations-example.yaml` to `integrations.yaml`
-5. Pop in all your secrets into the respective areas in `integrations.yaml`
+4. Copy & rename `.env-example` to `.env`
+5. Pop in all your secrets into the respective areas in `.env`
 6. Back to the console, `pipenv run python bot.py` to start the bot
 7. Type `!test` in the chatroom to test the bot's working
 
 **You just installed a basic chat bot for Twitch!** Have fun expanding the bot with more commands!! :D
 
 ## Bot Interaction
-Right now, you can only interact with the bot via the single command, `!test`. You can create similar commands pretty easily, just copy the function and change out the function name decorator arguement...
+Once the bot is connected to a chatroom you can use the command !command to make the bot print out a list of it's available commands.
+
+You can add commands with the following syntax:
 
 ```python
 @bot.command(name='likethis', aliases=['this'])
@@ -65,11 +65,9 @@ async def event_message(message):
 You can find more info in [TwitchIO's official documentation](https://twitchio.readthedocs.io/en/rewrite/twitchio.html).
 
 
-## Progress & Development Info
-
 ### Contributors & Licenses
 
-[NinjaBunny9000](https://github.com/NinjaBunny9000) - _Author, Project Manager_ - [Twitch](https://twitch.tv/ninjabunny9000) //  [Twitter](https://twitter.com/ninjabunny9000)
+[NinjaBunny9000](https://github.com/NinjaBunny9000) - Author of forked repo
 
-### Special Thanks
-Literally everyone that's helped even the smallest bit during streams. Thank you so much, y'all!
+[thomas-j-sell](https://github.com/thomas-j-sell) - Author of teaja_bot
+
