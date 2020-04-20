@@ -11,6 +11,9 @@ if(len(sys.argv) > 1):
     elif(sys.argv[1] == 'celery'):
         print('booting celery_bot')
         env_prefix = 'CELERY_'
+    elif(sys.argv[1] == 'soda'):
+        print('booting soda_bot')
+        env_prefix = 'SODA_'
     else:
         print(f"{sys.argv[1]} is not a valid bot. Booting teaja_bot")
 

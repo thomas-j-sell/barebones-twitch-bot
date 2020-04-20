@@ -13,6 +13,8 @@ if(env_prefix == 'TEAJA_'):
     import teaja_commands
 elif(env_prefix == 'CELERY_'):
     import celery_commands
+elif(env_prefix == 'SODA_'):
+    import soda_commands
 
 
 # add the list of available commands, all commands need to be imported before this
