@@ -90,6 +90,11 @@ jokes = [
         "I made a new playlist for hiking. It has music from Penuts, the Cranberries, and Eminem. I call it my trail mix.",
        "I bought some shoes from a drug dealer. I don’t know what he laced them with, but I was tripping all day.",
        "Give a man a duck, and he'll eat for a day. Teach a man to duck, and he'll never walk into a bar.",
-       'Two cannibals were eating a clown. One says to the other "does this taste funny to you"',
-       'How do reavers clean their spears? They run them through the Wash.'
+       'Two cannibals were eating a clown. One says to the other "does this taste funny to you?"',
+       'How do reavers clean their spears? They run them through the Wash.',
+       "I hate it when someone has hand sanitizer and I dont. They're always rubbing it in.",
+       'I store all my dad jokes in my dad-a-base.',
+       'I crashed my bike into a wall today.... it was wheelie unfortunate.',
+       "There are three kinds of people: those who can count and those who can't.",
+       'There are two kinds of people: those who can extrapolate from incomplete data...'
  ]
