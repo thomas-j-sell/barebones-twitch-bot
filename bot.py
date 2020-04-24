@@ -15,6 +15,14 @@ elif(env_prefix == 'CELERY_'):
     import celery_commands
 elif(env_prefix == 'SODA_'):
     import soda_commands
+    queue_commands.allow_requeue = True
+
+
+# temporary introduction command to introduce viewers to bot
+@bot.command(name='intro')
+async def intro(ctx):
+    bot_name = os.environ[f"{env_prefix}BOT_NICK"]
+    await ctx.send(f"Hello I am {bot_name}. I am new and still under contruction. To see what I can currently do type !commands.")
 
 
 # add the list of available commands, all commands need to be imported before this
@@ -26,8 +34,8 @@ async def commands(ctx):
     for key in command_list:
         command_list_str += f"!{key}, "
 
-    # remove the last comma
-    command_list_str = command_list_str[:-1]
+    # remove the last comma and space
+    command_list_str = command_list_str[:-2]
 
     await ctx.send(f"Available commands: {command_list_str}")
 
@@ -49,13 +57,15 @@ async def event_message(ctx):
     if ctx.author.name.lower() == os.environ[f"{env_prefix}BOT_NICK"].lower():
         return
 
+    print(f"User: {ctx.author.name}, badges: {ctx.author.badges}")
     await bot.handle_commands(ctx)
 
 
     # respond to a variety of hello, hey, hi, sup, etc.
-    hellos = ['hello', 'hey', 'hi', 'sup', 'whatsup', 'ello', 'hawwo', 'howdy', 'yo']
+    hellos = ['hello', 'helloo', 'hey', 'hi', 'hii', 'hiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yo yo yo', 'yoo', 'yooo', 'yoooo', 'wuddup', 'wuddup wuddup']
     # remove special characters and convert to lower case to compare to list
     message = ''.join(filter(str.isalnum, ctx.content.lower()))
+    # print(message)
 
     if message in hellos:
         await ctx.channel.send(f"{ctx.content} @{ctx.author.name}!")
