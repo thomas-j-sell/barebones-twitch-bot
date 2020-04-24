@@ -21,7 +21,5 @@ from command_utils import CommandGenerator
 
 @bot.command(name='cel')
 async def cel(ctx):
-    await ctx.send("Celery is the best!")
-
-
+    await ctx.send("suspec19Bff Celery is the best! suspec19Bff")
 
