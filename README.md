@@ -1,4 +1,3 @@
-
 # teaja_bot
 
 >**This is a fork of https://github.com/NinjaBunny9000/barebones-twitch-bot with a few snippits taken from https://github.com/NinjaBunny9000/DeepThonk**
