@@ -62,13 +62,13 @@ async def event_message(ctx):
 
 
     # respond to a variety of hello, hey, hi, sup, etc.
-    hellos = ['hello', 'helloo', 'hey', 'hi', 'hii', 'hiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yo yo yo', 'yoo', 'yooo', 'yoooo', 'wuddup', 'wuddup wuddup']
+    hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heyhey', 'hai', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff']
     # remove special characters and convert to lower case to compare to list
     message = ''.join(filter(str.isalnum, ctx.content.lower()))
     # print(message)
 
     if message in hellos:
-        await ctx.channel.send(f"{ctx.content} @{ctx.author.name}!")
+        await ctx.channel.send(f"Hello @{ctx.author.name}! Welcome to the stream!")
 
 
     # if anyone types '^' this bot will copy it
