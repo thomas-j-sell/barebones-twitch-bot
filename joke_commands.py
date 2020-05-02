@@ -96,5 +96,6 @@ jokes = [
        'I store all my dad jokes in my dad-a-base.',
        'I crashed my bike into a wall today.... it was wheelie unfortunate.',
        "There are three kinds of people: those who can count and those who can't.",
-       'There are two kinds of people: those who can extrapolate from incomplete data...'
+       'There are two kinds of people: those who can extrapolate from incomplete data...',
+       "What's the internal temperature of a tauntaun? Luke warm"
  ]
