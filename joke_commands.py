@@ -1,6 +1,5 @@
-"""
-Commands to print out dad jokes to chat.
-"""
+""" Commands to print out dad jokes to chat. """
+
 from config import bot
 import random
 
@@ -97,5 +96,24 @@ jokes = [
        'I crashed my bike into a wall today.... it was wheelie unfortunate.',
        "There are three kinds of people: those who can count and those who can't.",
        'There are two kinds of people: those who can extrapolate from incomplete data...',
-       "What's the internal temperature of a tauntaun? Luke warm"
+       "What's the internal temperature of a tauntaun? Luke warm.",
+       "A man walks into a zoo. The only animal in the entire zoo is a small dog. It's a shitzu.",
+       "How do you follow Will Smith through a snowstorm? You look for fresh prints.",
+       "Why don't melons get married? Because they cantaloupe",
+       "When life gives you melons, you may be dyslexic.",
+       "If you're addicted to seaweed you should probably sea kelp.",
+       "How does the Pope send money? Pray-pal.",
+       "Last night I had a dream that I was a muffler. I woke up exausted.",
+       "Have you ever noticed how rarely you see DeLoreans on the road? Their owners only drive them from time to time.",
+       "Not only I am a master of suspense, I am also...",
+       "I can't find the controller for my TV. It's probably in a remote location.",
+       "Why did the scarecrow get an award? He was outstanding in his field.",
+       "The ghost of a chicken is haunting my attic. It's a poultry-geist.",
+       'A Roman walks into a bar. He holds up 2 fingers and says "Five bears please.',
+       "How many tickles does it take to make an octopus laugh? Ten tickles.",
+       "How do you make a waterbed more bouncy? You pour in spring water.",
+       "What's the quietest animal on a farm? A shhhhhheep.",
+       "What do you call a checken staring at lettuce? Chicken sees a salad.",
+       "Why are french snails faster than other snails? L'ess cargo.",
+       "I got fired from my job at the keyboard factory today. I wasn't putting in enough shifts"
  ]
