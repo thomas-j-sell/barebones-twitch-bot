@@ -6,7 +6,7 @@ from config import bot
 # if user.is_sub || 'vip' in user.badges
 
 # I know globals are kind of evil, but I don't see another way to share these with async functions just yet
-is_open = False
+queue_is_open = False
 player_queue = []
 players_that_queued = {}
 allow_requeue = False
@@ -14,21 +14,21 @@ allow_requeue = False
 #TODO add command to let mods remove players from the queue
 @bot.command(name='queue', aliases=['q'])
 async def queue(ctx):
-    'Queue commands. Open/close, pop, print'
+    'Queue commands. Open/start, close/stop, next/pop, rules'
     words = ctx.content.split()
     if len(words) > 1:
         sub_command = words[1].lower()
 
         if sub_command == 'open' or sub_command == 'start':
             if ctx.author.is_mod:
-                globals()['is_open'] = True
+                globals()['queue_is_open'] = True
                 await ctx.send("The queue is now open. You can join with !join.")
             else:
                 await ctx.send(f"Sorry {ctx.author.name} only mods can do that.")
 
         elif sub_command == 'close' or sub_command == 'stop':
             if ctx.author.is_mod:
-                globals()['is_open'] = False
+                globals()['queue_is_open'] = False
                 await ctx.send("The queue is now closed.")
             else:
                 await ctx.send(f"Sorry {ctx.author.name} only mods can do that.")
@@ -45,7 +45,7 @@ async def queue(ctx):
             await ctx.send("1. This is a FIFO queue (first in first out), so you will play in the order you join. We can't accomodate requests to rearrange or manipulate the queue. 2. You need to be in the stream when you're called to be able to play. If you're not here, you will miss out. 3. Have fun!")
 
     else: # print queue to chat
-        if globals()['is_open']:
+        if globals()['queue_is_open']:
             queue_tip = 'The queue is open. You can join with !join.'
         else:
             queue_tip = 'The queue is closed.'
@@ -60,9 +60,8 @@ async def queue(ctx):
 
 @bot.command(name='join')
 async def join(ctx):
-    print(f"is_open = {is_open}")
     user = ctx.author
-    if is_open:
+    if globals()['queue_is_open']:
         if user.name in globals()['player_queue']:
             await ctx.send(f"{user.name} you are already in the queue.")
         elif user.name in globals()['players_that_queued']:
