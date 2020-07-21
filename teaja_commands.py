@@ -16,8 +16,8 @@ async def accounts(ctx):
     await ctx.send('PSN: teaja, Epic: dredgen_teaja, Activision: teaja#7667376, riot: TBD')
 
 gaming_account_commands = {
-        'psn' : 'PSN: teaja',
-        'epic' : 'Epic: dredgen_teaja',
+        'psn'        : 'PSN: teaja',
+        'epic'       : 'Epic: dredgen_teaja',
         'activision' : 'Activision: teaja7667376'
         }
 
@@ -47,9 +47,16 @@ for cmd, response in team_commands.items():
 # gear commands
 ################
 gear_commands = {
-        'controller' : 'Scuf Impact: https://scufgaming.com/playstation-impact-controller',
-        'headphones' : 'HyperX Cloud II: https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-GM/dp/B00SAYCVTQ'
+        'controller' : 'Scuf Impact',
+        'headphones' : 'HyperX Cloud II',
+        'keyboard'   : 'Logitech Pro',
+        'monitor'    : 'ASUS VG278QR 27" 1080p 165Hz 0.5ms',
+        'mouse'      : 'Logitech G502 Lightspeed',
         }
+
+@bot.command(name='pc', aliases=['specs'])
+async def pc(ctx):
+    await ctx.send('NZXT Streaming PC --- CASE: NZXT H510 (Black) --- MOTHERBOARD: MSI B450 TOMAHAWK --- CPU: AMD Ryzen 7 3700X 8-Core 3.6GHz --- CPU COOLING: AMD Wraith Prism --- GPU: GIGABYTE GeForce RTX 2070 Super WINDFORCE OC 3X 8G --- RAM: Team T-FORCE Vulcan Z 16GB (2 x 8GB) 3200MHz --- SSD: Intel 660p (1.0 TB) --- POWER SUPPLY: 650W Bronze PSU')
 
 # use command generator to build commands
 for cmd, response in gear_commands.items():
