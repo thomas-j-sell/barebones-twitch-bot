@@ -6,6 +6,7 @@ from config import bot, env_prefix
 import general_commands
 import joke_commands
 import queue_commands
+import giveaway_commands
 
 
 # bot specific commands
@@ -53,16 +54,16 @@ async def event_ready():
 async def event_message(ctx):
     'Runs every time a message is sent in chat.'
 
+    # basic logging to terminal, just lets you see that the bot is working
+    print(f"User: {ctx.author.name}, badges: {ctx.author.badges}")
+
     # make sure the bot ignores itself and the streamer
     if ctx.author.name.lower() == os.environ[f"{env_prefix}BOT_NICK"].lower():
         return
 
-    print(f"User: {ctx.author.name}, badges: {ctx.author.badges}")
-    await bot.handle_commands(ctx)
-
 
     # respond to a variety of hello, hey, hi, sup, etc.
-    hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heyhey', 'hai', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff']
+    hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heyhey', 'hai', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'yooooo', 'yoooooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff', 'oi', 'oi oi']
     # remove special characters and convert to lower case to compare to list
     message = ''.join(filter(str.isalnum, ctx.content.lower()))
     # print(message)
@@ -71,9 +72,18 @@ async def event_message(ctx):
         await ctx.channel.send(f"Hello @{ctx.author.name}! Welcome to the stream!")
 
 
-    # if anyone types '^' this bot will copy it
-    if ctx.content.lower() == '^':
+    # Parrotings
+    # if someone sends __ parrot back __
+    if ctx.content == '^':
         await ctx.channel.send('^')
+
+    # TODO add a cooldown so bot only adds one f to a particular fs-in-chat event
+    if ctx.content.lower() == 'f':
+        await ctx.channel.send('f')
+
+
+    # process the command
+    await bot.handle_commands(ctx)
 
 
 if __name__ == "__main__":
