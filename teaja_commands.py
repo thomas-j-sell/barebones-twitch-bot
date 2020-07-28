@@ -10,20 +10,21 @@ async def socials(ctx):
 
 ##################
 # gaming accounts
+# TODO determine if I actually want to invite viewers to friend me
 ##################
-@bot.command(name='accounts', aliases=['account'])
-async def accounts(ctx):
-    await ctx.send('PSN: teaja, Epic: dredgen_teaja, Activision: teaja#7667376, riot: TBD')
+# @bot.command(name='accounts', aliases=['account'])
+# async def accounts(ctx):
+#     await ctx.send('PSN: teaja, Epic: dredgen_teaja, Activision: teaja#7667376, riot: TBD')
 
-gaming_account_commands = {
-        'psn'        : 'PSN: teaja',
-        'epic'       : 'Epic: dredgen_teaja',
-        'activision' : 'Activision: teaja7667376'
-        }
+# gaming_account_commands = {
+#         'psn'        : 'PSN: teaja',
+#         'epic'       : 'Epic: dredgen_teaja',
+#         'activision' : 'Activision: teaja7667376'
+#         }
 
-# use command generator to build commands
-for cmd, response in gaming_account_commands.items():
-    CommandGenerator(cmd, response)
+# # use command generator to build commands
+# for cmd, response in gaming_account_commands.items():
+#     CommandGenerator(cmd, response)
 
 
 ########################
@@ -43,20 +44,22 @@ team_commands = {
 for cmd, response in team_commands.items():
     CommandGenerator(cmd, response)
 
+
 ################
 # gear commands
 ################
+@bot.command(name='pc', aliases=['specs'])
+async def pc(ctx):
+    await ctx.send('NZXT Streaming PC --- CASE: NZXT H510 (Black) --- MOTHERBOARD: MSI B450 TOMAHAWK --- CPU: AMD Ryzen 7 3700X 8-Core 3.6GHz --- CPU COOLING: AMD Wraith Prism --- GPU: GIGABYTE GeForce RTX 2070 Super WINDFORCE OC 3X 8G --- RAM: Team T-FORCE Vulcan Z 16GB (2 x 8GB) 3200MHz --- SSD: Intel 660p (1.0 TB) --- POWER SUPPLY: 650W Bronze PSU')
+
 gear_commands = {
         'controller' : 'Scuf Impact',
         'headphones' : 'HyperX Cloud II',
         'keyboard'   : 'Logitech Pro',
         'monitor'    : 'ASUS VG278QR 27" 1080p 165Hz 0.5ms',
         'mouse'      : 'Logitech G502 Lightspeed',
+        'camera'     : 'Razer Kiyo'
         }
-
-@bot.command(name='pc', aliases=['specs'])
-async def pc(ctx):
-    await ctx.send('NZXT Streaming PC --- CASE: NZXT H510 (Black) --- MOTHERBOARD: MSI B450 TOMAHAWK --- CPU: AMD Ryzen 7 3700X 8-Core 3.6GHz --- CPU COOLING: AMD Wraith Prism --- GPU: GIGABYTE GeForce RTX 2070 Super WINDFORCE OC 3X 8G --- RAM: Team T-FORCE Vulcan Z 16GB (2 x 8GB) 3200MHz --- SSD: Intel 660p (1.0 TB) --- POWER SUPPLY: 650W Bronze PSU')
 
 # use command generator to build commands
 for cmd, response in gear_commands.items():
@@ -71,7 +74,6 @@ async def brb(ctx):
 async def back(ctx):
     await ctx.send("I'm back. Stay awhile and listen.")
 
-
 @bot.command(name='lurk')
 async def lurk(ctx):
     lurk_messages = [
@@ -82,5 +84,4 @@ async def lurk(ctx):
             "Lurkin at the car wash."
             ]
     await ctx.send(f"{random.choice(lurk_messages)}")
-
 
