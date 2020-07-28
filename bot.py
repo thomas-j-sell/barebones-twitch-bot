@@ -57,15 +57,17 @@ async def event_message(ctx):
     # basic logging to terminal, just lets you see that the bot is working
     print(f"User: {ctx.author.name}, badges: {ctx.author.badges}")
 
+    # just make content lowercase so that upper case commands will work
+    ctx.content = ctx.content.lower()
+
     # make sure the bot ignores itself and the streamer
     if ctx.author.name.lower() == os.environ[f"{env_prefix}BOT_NICK"].lower():
         return
 
-
     # respond to a variety of hello, hey, hi, sup, etc.
-    hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heyhey', 'hai', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'sup', 'sah', 'whatsup', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'yooooo', 'yoooooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff', 'oi', 'oi oi']
+    hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heyhey', 'hai', 'haii', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'sup', 'sah', 'whatsup', 'elo', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'yooooo', 'yoooooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff', 'oi', 'oi oi']
     # remove special characters and convert to lower case to compare to list
-    message = ''.join(filter(str.isalnum, ctx.content.lower()))
+    message = ''.join(filter(str.isalnum, ctx.content))
     # print(message)
 
     if message in hellos:
@@ -78,7 +80,7 @@ async def event_message(ctx):
         await ctx.channel.send('^')
 
     # TODO add a cooldown so bot only adds one f to a particular fs-in-chat event
-    if ctx.content.lower() == 'f':
+    if ctx.content == 'f':
         await ctx.channel.send('f')
 
 
