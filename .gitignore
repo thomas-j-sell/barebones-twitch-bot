@@ -3,5 +3,6 @@
 config/integrations\.yaml
 config/settings\.yaml
 .env
+*.swp
 
 README copy.md
