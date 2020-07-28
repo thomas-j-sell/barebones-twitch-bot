@@ -1,6 +1,5 @@
 from config import bot
 from command_utils import CommandGenerator
-import random
 
 
 @bot.command(name='socials', aliases=['social'])
@@ -73,15 +72,4 @@ async def brb(ctx):
 @bot.command(name='back')
 async def back(ctx):
     await ctx.send("I'm back. Stay awhile and listen.")
-
-@bot.command(name='lurk')
-async def lurk(ctx):
-    lurk_messages = [
-            "Lurk, Lurk, Lurk.",
-            "Live, laugh, Lurk.",
-            "Can you feel the lurk tonight?",
-            "It's the circle of lurk.",
-            "Lurkin at the car wash."
-            ]
-    await ctx.send(f"{random.choice(lurk_messages)}")
 

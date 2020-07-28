@@ -1,4 +1,5 @@
 from config import bot
+import random
 
 @bot.command(name='source')
 async def source(ctx):
@@ -8,6 +9,18 @@ async def source(ctx):
 @bot.command(name='blurg')
 async def blurg(ctx):
     await ctx.send('blurg')
+
+
+@bot.command(name='lurk')
+async def lurk(ctx):
+    lurk_messages = [
+            "Lurk, Lurk, Lurk.",
+            "Live, laugh, Lurk.",
+            "Can you feel the lurk tonight?",
+            "It's the circle of lurk.",
+            "Lurkin at the car wash."
+            ]
+    await ctx.send(f"{random.choice(lurk_messages)}")
 
 
 @bot.command(name='thicc')
