@@ -18,7 +18,7 @@ async def joke(ctx):
     else:
         await ctx.send(random.choice(jokes))
 
-# massive list of jokes
+# the dad-a-base
 jokes = [
         "Some people think filling animals with helium is wrong… I don't judge, whatever floats your goat.",
         "So there was this pun contest…  I entered ten puns in the hopes that one might win. No pun in ten did.",
@@ -113,7 +113,7 @@ jokes = [
        "How many tickles does it take to make an octopus laugh? Ten tickles.",
        "How do you make a waterbed more bouncy? You pour in spring water.",
        "What's the quietest animal on a farm? A shhhhhheep.",
-       "What do you call a checken staring at lettuce? Chicken sees a salad.",
+       "What do you call a chicken staring at lettuce? Chicken sees a salad.",
        "Why are french snails faster than other snails? L'ess cargo.",
        "I got fired from my job at the keyboard factory today. I wasn't putting in enough shifts"
  ]
