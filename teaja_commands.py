@@ -52,12 +52,12 @@ async def pc(ctx):
     await ctx.send('NZXT Streaming PC --- CASE: NZXT H510 (Black) --- MOTHERBOARD: MSI B450 TOMAHAWK --- CPU: AMD Ryzen 7 3700X 8-Core 3.6GHz --- CPU COOLING: AMD Wraith Prism --- GPU: GIGABYTE GeForce RTX 2070 Super WINDFORCE OC 3X 8G --- RAM: Team T-FORCE Vulcan Z 16GB (2 x 8GB) 3200MHz --- SSD: Intel 660p (1.0 TB) --- POWER SUPPLY: 650W Bronze PSU')
 
 gear_commands = {
-        'controller' : 'Scuf Impact',
-        'headphones' : 'HyperX Cloud II',
-        'keyboard'   : 'Logitech Pro',
         'monitor'    : 'ASUS VG278QR 27" 1080p 165Hz 0.5ms',
-        'mouse'      : 'Logitech G502 Lightspeed',
         'camera'     : 'Razer Kiyo'
+        'headphones' : 'HyperX Cloud II',
+        'controller' : 'Scuf Impact',
+        'keyboard'   : 'Logitech Pro',
+        'mouse'      : 'Logitech G502 Lightspeed',
         }
 
 # use command generator to build commands
