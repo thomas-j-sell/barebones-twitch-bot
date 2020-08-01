@@ -84,4 +84,12 @@ async def join(ctx):
         await ctx.send(f"Sorry {user.name} the queue is closed.")
 
 
+@bot.command(name='leave')
+async def leave(ctx):
+    user = ctx.author.name
+    if user in globals()['player_queue']:
+        globals()['player_queue'].remove(user)
+        await ctx.send(f"{user} you've been removed from the queue.")
+    else:
+        await ctx.send(f"You weren't in the queue {user}")
 
