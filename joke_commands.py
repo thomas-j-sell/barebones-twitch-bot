@@ -115,5 +115,7 @@ jokes = [
        "What's the quietest animal on a farm? A shhhhhheep.",
        "What do you call a chicken staring at lettuce? Chicken sees a salad.",
        "Why are french snails faster than other snails? L'ess cargo.",
-       "I got fired from my job at the keyboard factory today. I wasn't putting in enough shifts"
+       "I got fired from my job at the keyboard factory today. I wasn't putting in enough shifts",
+       "Atheism is a non-prophet organisation.",
+       "Where do young cows eath lunch? In the calf-ateria."
  ]
