@@ -53,11 +53,11 @@ async def pc(ctx):
 
 gear_commands = {
         'monitor'    : 'ASUS VG278QR 27" 1080p 165Hz 0.5ms',
-        'camera'     : 'Razer Kiyo'
+        'camera'     : 'Razer Kiyo',
         'headphones' : 'HyperX Cloud II',
         'controller' : 'Scuf Impact',
         'keyboard'   : 'Logitech Pro',
-        'mouse'      : 'Logitech G502 Lightspeed',
+        'mouse'      : 'Logitech G502 Lightspeed'
         }
 
 # use command generator to build commands
