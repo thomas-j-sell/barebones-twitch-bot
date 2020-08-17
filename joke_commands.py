@@ -117,5 +117,9 @@ jokes = [
        "Why are french snails faster than other snails? L'ess cargo.",
        "I got fired from my job at the keyboard factory today. I wasn't putting in enough shifts",
        "Atheism is a non-prophet organisation.",
-       "Where do young cows eath lunch? In the calf-ateria."
+       "Where do young cows eath lunch? In the calf-ateria.",
+       "I thought about making a belt out of all my spare watches, but I decided it would be a waist of time.",
+       "What rock group has 4 men that don't sing? Mount Rushmore.",
+       "I just learned that it's innapropriate to make dad jokes when you're not really a dad. It's a faux-pa."
+
  ]
