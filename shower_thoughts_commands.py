@@ -39,5 +39,7 @@ thoughts = [
         "Lobsters are mermaids to scorpions.",
         "Cookie dough is the sushi of desserts.",
         "If tomatoes are fruits then isn't ketchup a jelly?",
-        "Two wrongs don't make a right, but three lefts do."
+        "Two wrongs don't make a right, but three lefts do.",
+        "Lasagna is just spaghetti flavored cake.",
+        "It's weird that we cook bacon and bake cookies."
  ]
