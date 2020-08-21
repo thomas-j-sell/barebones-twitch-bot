@@ -37,7 +37,7 @@ thoughts = [
         "Onion rings are just vegatable donuts.",
         "Your stomach thinks all potatoes are mashed.",
         "Lobsters are mermaids to scorpions.",
-        "Cookie dough is the sushi of deserts.",
+        "Cookie dough is the sushi of desserts.",
         "If tomatoes are fruits then isn't ketchup a jelly?",
         "Two wrongs don't make a right, but three lefts do."
  ]
