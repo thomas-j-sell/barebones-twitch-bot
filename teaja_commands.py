@@ -73,3 +73,12 @@ async def brb(ctx):
 async def back(ctx):
     await ctx.send("I'm back. Stay awhile and listen.")
 
+@bot.command(name='prime')
+async def prime(ctx):
+    await ctx.send("If you have Amazon Prime you can link your Amazon account to your Twitch account to get some free stuff. Free games, exlcusive in game items, and a free subscription you can give to any streamer. Visit gaming.amazon.com to get started. NOTE: that prime subscriptions do not automatically renew, so you'll have to manually reapply them each month.")
+
+
+@bot.command(name='podcast')
+async def podcast(ctx):
+    await ctx.send("@dudeitsmefam hosts a podcast on his twitch channel every week on Wednesday at 6:30 et, 5:30 ct. Guests discuss streamer oriented topics. Please check it out. twitch.tv/dudeitsmefam")
+
