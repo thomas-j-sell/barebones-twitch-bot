@@ -15,7 +15,7 @@ async def blurg(ctx):
 @bot.command(name='lurk')
 async def lurk(ctx):
     lurk_messages = [
-            "Lurk, Lurk, Lurk.",
+            "Lurk, Lurk.",
             "Live, laugh, Lurk.",
             "Can you feel the lurk tonight?",
             "It's the circle of lurk.",
@@ -25,7 +25,8 @@ async def lurk(ctx):
             "Livin la vida Lurk-a.",
             "I'm pretty sure there's more to life than being really, really ridiculously good lurking.",
             "We're up all night to get lurk-y.",
-            "Lurk-en... Wait for it, and I hope you're not lurk-tose intolerant cause the second half of that word is... dary."
+            "Lurk-en... Wait for it, and I hope you're not lurk-tose intolerant cause the second half of that word is... dary.",
+            "The cake is a lurk."
             ]
     await ctx.send(f"{random.choice(lurk_messages)}")
 
