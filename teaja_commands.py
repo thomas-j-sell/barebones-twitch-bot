@@ -36,7 +36,6 @@ async def pyramid(ctx):
 team_commands = {
         'cc' : 'You can support Team Pyramid by using the Epic creator code: "pyrmd"',
         'discord' : 'Come hang out with Teaja and the other members of Team Pyramid in our Discord! https://discord.gg/FwMhsgp',
-        'merch' : 'Check out the Team Pyramid merch! https://pyrmd-design.myshopify.com/'
         }
 
 # use command generator to build commands
