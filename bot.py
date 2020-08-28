@@ -19,12 +19,20 @@ elif(env_prefix == 'SODA_'):
     import soda_commands
     queue_commands.allow_requeue = True
 
+# global bot variables
+first_post = ''
+
 
 # temporary introduction command to introduce viewers to bot
 @bot.command(name='intro')
 async def intro(ctx):
     bot_name = os.environ[f"{env_prefix}BOT_NICK"]
     await ctx.send(f"Hello I am {bot_name}. I am new and still under contruction. To see what I can currently do type !commands.")
+
+
+@bot.command(name='first')
+async def first(ctx):
+    await ctx.channel.send(f"{globals()['first_post']} was here first!")
 
 
 # add the list of available commands, all commands need to be imported before this
@@ -65,6 +73,7 @@ async def event_message(ctx):
     if ctx.author.name.lower() == os.environ[f"{env_prefix}BOT_NICK"].lower():
         return
 
+
     # respond to a variety of hello, hey, hi, sup, etc.
     hellos = ['allo', 'hello', 'helloo', 'henlo', 'hey', 'heya', 'heyhey', 'hai', 'haii', 'hi', 'hii', 'hiii', 'hiiii', 'hiiiii', 'hola', 'sup', 'sah', 'whatsup', 'elo', 'ello', 'hawwo', 'hewo', 'howdy', 'yo', 'yoyo', 'yoyoyo', 'yoo', 'yooo', 'yoooo', 'yooooo', 'yoooooo', 'wuddup', 'wuddupwuddup', 'wuddupwuddupwuddupa', 'whatup', 'whatupwhatup', 'suspec19bff', 'suspec19bffsuspec19bff', 'suspec19bffsuspec19bffsuspec19bff', 'oi', 'oi oi']
     # remove special characters and convert to lower case to compare to list
@@ -73,6 +82,11 @@ async def event_message(ctx):
 
     if message in hellos:
         await ctx.channel.send(f"Hello @{ctx.author.name}! Welcome to the stream!")
+
+    # Track first poster
+    if not globals()['first_post']:
+        globals()['first_post'] = ctx.author.name
+        await ctx.channel.send(f"Congratulations {ctx.author.name}, you were here first!")
 
 
     # Parrotings
