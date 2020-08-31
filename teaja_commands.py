@@ -64,6 +64,18 @@ for cmd, response in gear_commands.items():
     CommandGenerator(cmd, response)
 
 
+#####################
+# Story game commands
+#####################
+@bot.command(name='recap')
+async def recap(ctx):
+    await ctx.send("I need a recap please. (use !recap if you are ever lost or confused about the current story and Teaja will do his best to catch you up.)")
+
+@bot.command(name='safeword')
+async def safeword(ctx):
+    await ctx.send("My safeword is 'Chupacabra'. This is a first playthrough and I don't want any back seating or spoilers. Unless I use my safeword all questions are retorical.")
+
+
 @bot.command(name='brb')
 async def brb(ctx):
     await ctx.send("I have to step away for a moment, but I'll be right back. Would you kindly stick around?")
@@ -74,7 +86,7 @@ async def back(ctx):
 
 @bot.command(name='prime')
 async def prime(ctx):
-    await ctx.send("If you have Amazon Prime you can link your Amazon account to your Twitch account to get some free stuff. Free games, exlcusive in game items, and a free subscription you can give to any streamer. Visit gaming.amazon.com to get started. NOTE: that prime subscriptions do not automatically renew, so you'll have to manually reapply them each month.")
+    await ctx.send("If you have Amazon Prime, you can link your Amazon account to your Twitch account to get some free stuff: free games, exlcusive in game items, and a free subscription you can give to any streamer. Visit gaming.amazon.com to get started. NOTE: that prime subscriptions do not automatically renew, so you'll have to manually reapply them each month.")
 
 
 @bot.command(name='podcast')
