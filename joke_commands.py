@@ -121,5 +121,6 @@ jokes = [
        "I thought about making a belt out of all my spare watches, but I decided it would be a waist of time.",
        "What rock group has 4 men that don't sing? Mount Rushmore.",
        "I just learned that it's innapropriate to make dad jokes when you're not really a dad. It's a faux-pa.",
-       "When I first got a universal remote I thought, wow this changes everything."
+       "When I first got a universal remote I thought, wow this changes everything.",
+       "A horse walks into a bar and orders a pint. The barkeep says, \"I don't think I am,\" and vanishes from existence. See, the joke is about Descartes' famous philosophy of \"I think; therefore, I am\", but to explain before the rest of the joke would be putting Descartes before the horse."
  ]
