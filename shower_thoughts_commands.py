@@ -43,5 +43,6 @@ thoughts = [
         "Lasagna is just spaghetti flavored cake.",
         "It's weird that we cook bacon and bake cookies.",
         "Why is it that fingers have tips yet we can't tip-finger, but toes don't have tips and we can tip-toe?",
-        'The phrases "I\'m down" and "I\'m up" mean the same thing'
+        'The phrases "I\'m down" and "I\'m up" mean the same thing',
+        "Aladdin's magic carpet is actually a rug."
  ]
