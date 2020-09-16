@@ -123,5 +123,6 @@ jokes = [
        "I just learned that it's innapropriate to make dad jokes when you're not really a dad. It's a faux-pa.",
        "When I first got a universal remote I thought, wow this changes everything.",
        "A horse walks into a bar and orders a pint. The barkeep says, \"I don't think I am,\" and vanishes from existence. See, the joke is about Descartes' famous philosophy of \"I think; therefore, I am\", but to explain before the rest of the joke would be putting Descartes before the horse.",
-       "Do you ever wonder how ghosts get fit? They do deadlifts."
+       "Do you ever wonder how ghosts get fit? They do deadlifts.",
+       "Do you ever wonder why there are no vampire stories set in Africa? It's because holy water kills vampires and they bless the rains down in Africa."
  ]
