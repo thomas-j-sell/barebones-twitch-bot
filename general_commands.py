@@ -28,7 +28,8 @@ async def lurk(ctx):
             "Lurk-en... Wait for it, and I hope you're not lurk-tose intolerant cause the second half of that word is... dary.",
             "The cake is a lurk.",
             "They see me playin', they lurkin'.",
-            "What is lurk? Baby don't chat me, don't chat me, no more."
+            "What is lurk? Baby don't chat me, don't chat me, no more.",
+            "What's lurkin? Don't mind me just watchin."
             ]
     await ctx.send(f"{random.choice(lurk_messages)}")
 
