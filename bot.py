@@ -6,6 +6,7 @@ from config import bot, env_prefix
 import general_commands
 import joke_commands
 import shower_thoughts_commands
+import itsabut_commands
 import queue_commands
 import giveaway_commands
 
