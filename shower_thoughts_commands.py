@@ -45,4 +45,9 @@ thoughts = [
         "Why is it that fingers have tips yet we can't tip-finger, but toes don't have tips and we can tip-toe?",
         'The phrases "I\'m down" and "I\'m up" mean the same thing',
         "Aladdin's magic carpet is actually a rug.",
-        "Technically if you don't cut a cake and just eat the whole thing with a fork you only had once piece." ]
+        "Technically if you don't cut a cake and just eat the whole thing with a fork you only had once piece.",
+        "If your shirt isn't tucked into your pants, are your pants tucked into your shirt?",
+        "If you're invisbile and you close your eyes, can you see through your eyelids?",
+        "A firetruck is actually a watertruck.",
+        "If you pamper a cow, would you get spoiled milk?"
+        ]
