@@ -49,5 +49,6 @@ thoughts = [
         "If your shirt isn't tucked into your pants, are your pants tucked into your shirt?",
         "If you're invisbile and you close your eyes, can you see through your eyelids?",
         "A firetruck is actually a watertruck.",
-        "If you pamper a cow, would you get spoiled milk?"
+        "If you pamper a cow, would you get spoiled milk?",
+        "If you keep traveling north long enough you will eventually start traveling south, but you can travel east or west forever."
         ]
