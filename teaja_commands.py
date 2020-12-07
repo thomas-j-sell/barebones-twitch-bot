@@ -4,8 +4,17 @@ from command_utils import CommandGenerator
 
 @bot.command(name='socials', aliases=['social'])
 async def socials(ctx):
-    await ctx.send("Hey! Listen! If you want to keep up with me on social media you can follow on these platforms: twitter.com/teaja instagram.com/dredgen_teaja")
+    await ctx.send("Hey! Listen! If you want to keep up with me on social media you can follow on these platforms: twitter.com/teaja tiktok.com/@dredgen_teaja instagram.com/dredgen_teaja")
 
+# individual socials
+social_commands = {
+        'twitter':   'twitter.com/teaja',
+        'tiktok':    'tiktok.com/@dredgen_teaja',
+        'instagram': 'instagram.com/dredgen_teaja'
+        }
+
+for cmd, response in social_commands.items():
+    CommandGenerator(cmd, response)
 
 ##################
 # gaming accounts
