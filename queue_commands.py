@@ -1,6 +1,8 @@
 """ Commands to create and admin queues """
 
 from config import bot
+from command_utils import safe_list_print
+
 # User: longitude01, Tags: {'badge-info': 'subscriber/3', 'badges': 'vip/1,subscriber/3,sub-gifter/1', 'color': '#B05E81', 'display-name': 'Longitude01', 'emotes': '', 'flags': '', 'id': '81ada176-3143-4cf9-a7ef-0e01f75e3917', 'mod': 0, 'room-id': 439644785, 'subscriber': 1, 'tmi-sent-ts': 1587517847633, 'turbo': 0, 'user-id': 432158063, 'user-type': ''}
 
 # if user.is_sub || 'vip' in user.badges
@@ -10,6 +12,7 @@ queue_is_open = False
 player_queue = []
 players_that_queued = {}
 allow_requeue = False
+
 
 #TODO add command to let mods remove players from the queue
 @bot.command(name='queue', aliases=['q'])
@@ -42,7 +45,7 @@ async def queue(ctx):
                 await ctx.send(f"Sorry {ctx.author.name} only mods can do that.")
 
         elif sub_command == 'rules':
-            await ctx.send("1. This is a FIFO queue (first in first out), so you will play in the order you join. We can't accomodate requests to rearrange or manipulate the queue. 2. You need to be in the stream when you're called to be able to play. If you're not here, you will miss out. 3. Have fun!")
+            await ctx.send("Queue rules: 1. This is a FIFO queue (first in, first out), so you will play in the order you join. We can't accomodate requests to rearrange or manipulate the queue. 2. You need to be in the stream when you're called to be able to play. If you're not here, you will miss out. 3. Have fun!")
 
     else: # print queue to chat
         if globals()['queue_is_open']:
@@ -52,10 +55,10 @@ async def queue(ctx):
 
         if globals()['player_queue']:
             print(globals()['player_queue'])
-            await ctx.send(f"{globals()['player_queue']} {queue_tip}")
+            await safe_list_print(ctx, f"{queue_tip} {globals()['player_queue']}")
         else:
             print(globals()['player_queue'])
-            await ctx.send(f"The queue is currently empty. {queue_tip}")
+            await safe_list_print(ctx, f"The queue is currently empty. {queue_tip}")
 
 
 @bot.command(name='join')
@@ -91,5 +94,5 @@ async def leave(ctx):
         globals()['player_queue'].remove(user)
         await ctx.send(f"{user} you've been removed from the queue.")
     else:
-        await ctx.send(f"You weren't in the queue {user}")
+        await ctx.send(f"You weren't in the queue {user}.")
 

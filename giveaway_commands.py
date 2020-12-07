@@ -1,6 +1,7 @@
 """ Commands to create and admin giveaways """
 
 from config import bot
+from command_utils import safe_list_print
 
 import random
 
@@ -54,17 +55,17 @@ async def giveaway(ctx):
                 await ctx.send(f"Sorry {ctx.author.name} only mods can do that.")
 
         elif sub_command == 'rules':
-            await ctx.send("Anyone can enter, you don't need to be a follower or a sub. You just need to be in the stream when the winner is called.")
+            await ctx.send("Giveaway rules: Anyone can enter, you don't need to be a follower or a sub. You just need to be in the stream when the winner is called, and you have to be willing to share enough personal information to get the prize to you (this includes name, address, and phone number for shipping physical items).")
 
     else: # print queue to chat
         # TODO allow the 'join' word to be set with open command?
         if globals()['giveaway_is_open']:
             if globals()['giveaway_pool']:
-                await ctx.send(f"A giveaway for {globals()['current_giveaway']} is open. You can join with !win. The following players are already entered: {globals()['giveaway_pool']}")
+                await safe_list_print(ctx, f"A giveaway for {globals()['current_giveaway']} is open. You can join with !win. The following players are already entered: {globals()['giveaway_pool']}")
             else:
                 await ctx.send(f"A giveaway for {globals()['current_giveaway']} is open. You can join with !win.")
-        elif giveaway_pool:
-            await ctx.send(f"The giveaway is closed, but the following players are entered to win: {globals()['giveaway_pool']}")
+        elif globals()['giveaway_pool']:
+            await safe_list_print(ctx, f"The giveaway is closed, but the following players are entered to win: {globals()['giveaway_pool']}")
         else:
             await ctx.send(f"Sorry {ctx.author.name} there is no giveaway open.")
 
