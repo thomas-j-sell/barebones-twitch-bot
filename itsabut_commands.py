@@ -24,5 +24,9 @@ itsabuts = [
    "It's an internet connection, but about an anime character: Wai-fi",
    "It's an anime, but about a part of your body: Naru-toe",
    "It's an Apex legend, but also someone you're with forever: Wifeline",
-   "It's a network drama, but in a popular game: \"This is sus\"",
+   "It's a network drama, but in a popular game: This is Sus",
+   "It's a crime show, but about side dishes: Coleslaw and Order",
+   "It's a Band, but they were around before Jesus: AC/BC",
+   "It's an adventure game, but about the miracle of birth: Womb Raider",
+   "It's a sci fi movie, but about really large pigs, Star Boars"
 ]
