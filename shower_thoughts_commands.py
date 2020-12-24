@@ -52,5 +52,6 @@ thoughts = [
         "If you pamper a cow, would you get spoiled milk?",
         "If you keep traveling north long enough you will eventually start traveling south, but you can travel east or west forever.",
         'Are oranges named "oranges" because oranges are orange or is orange named "orange" because oranges are orange?',
-        "The youngest picture of you, is also the oldest picture of you."
+        "The youngest picture of you, is also the oldest picture of you.",
+        "The only part of your reflection you can lick is your tongue."
         ]
