@@ -125,5 +125,6 @@ jokes = [
        "A horse walks into a bar and orders a pint. The barkeep says, \"I don't think I am,\" and vanishes from existence. See, the joke is about Descartes' famous philosophy of \"I think; therefore, I am\", but to explain before the rest of the joke would be putting Descartes before the horse.",
        "Do you ever wonder how ghosts get fit? They do deadlifts.",
        "Do you ever wonder why there are no vampire stories set in Africa? It's because holy water kills vampires and they bless the rains down in Africa.",
-       "I heard that before it was carved Mount Rushmore had a natural beauty that was unpresidented."
+       "I heard that before it was carved Mount Rushmore had a natural beauty that was unpresidented.",
+       "The other day I went to a resturant that had pelican on the menu. I decided not to try it, the bill would have been huge."
  ]
