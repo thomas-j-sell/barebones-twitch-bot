@@ -4,7 +4,7 @@ from command_utils import CommandGenerator
 
 @bot.command(name='socials', aliases=['social'])
 async def socials(ctx):
-    await ctx.send("Hey! Listen! If you want to keep up with me on social media you can follow on these platforms: twitter.com/teaja tiktok.com/@dredgen_teaja instagram.com/dredgen_teaja")
+    await ctx.send("Hey! Listen! If you want to keep up with me on social media you can follow on these platforms: twitter.com/teaja | tiktok.com/@dredgen_teaja | instagram.com/dredgen_teaja")
 
 # individual socials
 social_commands = {
@@ -65,7 +65,8 @@ gear_commands = {
         'headphones' : 'HyperX Cloud II',
         'controller' : 'Scuf Impact',
         'keyboard'   : 'Logitech Pro',
-        'mouse'      : 'Logitech G502 Lightspeed'
+        'mouse'      : 'Logitech G502 Lightspeed',
+        'mic'        : 'Blue Yeti X'
         }
 
 # use command generator to build commands
