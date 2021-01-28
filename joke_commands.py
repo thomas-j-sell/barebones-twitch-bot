@@ -126,5 +126,6 @@ jokes = [
        "Do you ever wonder how ghosts get fit? They do deadlifts.",
        "Do you ever wonder why there are no vampire stories set in Africa? It's because holy water kills vampires and they bless the rains down in Africa.",
        "I heard that before it was carved Mount Rushmore had a natural beauty that was unpresidented.",
-       "The other day I went to a resturant that had pelican on the menu. I decided not to try it, the bill would have been huge."
+       "The other day I went to a resturant that had pelican on the menu. I decided not to try it, the bill would have been huge.",
+       "Never challenge Death to a pillow fight... unless you can handle the reaper cushions."
  ]
