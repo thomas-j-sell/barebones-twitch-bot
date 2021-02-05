@@ -63,7 +63,7 @@ gear_commands = {
         'monitor'    : 'ASUS VG278QR 27" 1080p 165Hz 0.5ms',
         'camera'     : 'Razer Kiyo',
         'headphones' : 'HyperX Cloud II',
-        'controller' : 'Scuf Impact',
+        'controller' : 'Scuf Impact | Retro Fighters Brawler64',
         'keyboard'   : 'Logitech Pro',
         'mouse'      : 'Logitech G502 Lightspeed',
         'mic'        : 'Blue Yeti X'
