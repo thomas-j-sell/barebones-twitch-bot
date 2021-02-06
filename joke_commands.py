@@ -128,5 +128,6 @@ jokes = [
        "I heard that before it was carved Mount Rushmore had a natural beauty that was unpresidented.",
        "The other day I went to a resturant that had pelican on the menu. I decided not to try it, the bill would have been huge.",
        "Never challenge Death to a pillow fight... unless you can handle the reaper cushions.",
-       "Lego Store re-opens after lockdown. Folks lined up for blocks."
+       "Lego Store re-opens after lockdown. Folks lined up for blocks.",
+       "I pulled a muscle swinging my pickaxe. It was a miner injury."
  ]
