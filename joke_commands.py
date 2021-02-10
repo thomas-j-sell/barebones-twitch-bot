@@ -129,5 +129,6 @@ jokes = [
        "The other day I went to a resturant that had pelican on the menu. I decided not to try it, the bill would have been huge.",
        "Never challenge Death to a pillow fight... unless you can handle the reaper cushions.",
        "Lego Store re-opens after lockdown. Folks lined up for blocks.",
-       "I pulled a muscle swinging my pickaxe. It was a miner injury."
+       "I pulled a muscle swinging my pickaxe. It was a miner injury.",
+       "My wife left me because of my obsession with horoscopes... It Taurus apart."
  ]
