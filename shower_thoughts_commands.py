@@ -55,7 +55,7 @@ thoughts = [
         "The youngest picture of you, is also the oldest picture of you.",
         "The only part of your reflection you can lick is your tongue.",
         'The word "bed" is shaped like a bed.',
-        'Sim Jims are hot dog raisins.',
+        'Slim Jims are hot dog raisins.',
         'Saying "everyone on earth" excludes about 6 people.',
         'Why do people say "tuna fish" but not "chicken bird" or "pork hog?"',
         'If you buy a bigger bed you have more bed room, but less bedroom.'
