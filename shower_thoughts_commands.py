@@ -58,5 +58,6 @@ thoughts = [
         'Slim Jims are hot dog raisins.',
         'Saying "everyone on earth" excludes about 6 people.',
         'Why do people say "tuna fish" but not "chicken bird" or "pork hog?"',
-        'If you buy a bigger bed you have more bed room, but less bedroom.'
+        'If you buy a bigger bed you have more bed room, but less bedroom.',
+        'Two people can be born at the exact same time, but have different birthdays.'
         ]
